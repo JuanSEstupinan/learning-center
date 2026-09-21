@@ -3,8 +3,10 @@ import Home from "./shared/presentation/views/home.vue";
 import About from "./shared/presentation/views/about.vue";
 
 const routes = [
-    { path: '/home',    name: 'home',   component: Home,    meta: { title: 'Home' } },
-    { path: '/about',   name: 'about',  component: About,   meta: { title: 'About' } },
+    { path: '/home',              name: 'home',     component: Home,         meta: { title: 'Home' } },
+    { path: '/about',             name: 'about',    component: About,        meta: { title: 'About' } },
+    { path: '/',                  redirect: '/home' },
+    { path: '/:pathMatch(.*)*', name: 'not-found',  component: PageNotFound, meta: { title: 'Page Not Found' }}
 ];
 
 const router = createRouter({
