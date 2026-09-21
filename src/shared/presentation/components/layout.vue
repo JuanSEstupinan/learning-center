@@ -1,7 +1,6 @@
 <script setup>
   import {useI18n} from "vue-i18n";
   import {ref} from "vue";
-  import about from "../views/about.vue";
 
   const { t } = useI18n();
   const drawer = ref(false);
