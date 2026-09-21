@@ -21,10 +21,10 @@ import {
     ToastService, Toolbar
 } from "primevue";
 
-const primeVueUiLicenseKey = import.meta.env.VITE_PRIME_UI_LICENSE_KEY;
+const primeUiLicenseKey = import.meta.env.VITE_PRIME_UI_LICENSE_KEY;
 
 createApp(App)
-    .use(PrimeVue, { theme: { preset: material }, ripple: true, license: primeUiLicenseKey })
+    .use(PrimeVue, { theme: { preset: Material }, ripple: true, license: primeUiLicenseKey })
     .use(ConfirmationService)
     .use(DialogService)
     .use(ToastService)

@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router';
 import Home from "./shared/presentation/views/home.vue";
 import About from "./shared/presentation/views/about.vue";
+import PageNotFound from "./shared/presentation/views/page-not-found.vue";
 
 const routes = [
     { path: '/home',              name: 'home',     component: Home,         meta: { title: 'Home' } },
